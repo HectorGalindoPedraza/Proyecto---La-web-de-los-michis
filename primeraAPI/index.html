@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/latest/normalize.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gatitos aleatorios</title>
+  </head>
+  <body>
+    <div class="align-container">
+      <header id="main-header">
+        <h1>La web de los michis</h1>
+      </header>
+
+      <span id="error" class="hidden"></span>
+
+      <section id="random-michis">
+        <header>
+          <h2>Encuentra michis de internet</h2>
+          <button id="reload-cats">Recargar!</button>
+        </header>
+
+        <div class="cats-container random-container">
+          <!--   <article>
+            <img class="random-michi" width="250" alt="Un gatito aleatorio" width="300" />
+            <button id="btn-save-cat">Guardar michi en favoritos</button>
+          </article> -->
+        </div>
+      </section>
+
+      <div class="background-block hidden">
+        <section id="uploadingMichi">
+          <header>
+            <h2>Sube la foto de tu michi</h2>
+            <button id="btn-close">
+              <img
+                src="https://i.ibb.co/cvtzyYS/close-button-1.png"
+                alt="close window
+              "
+              />
+            </button>
+          </header>
+
+          <form id="uploadingForm">
+            <figure>
+              <img
+                src="https://i.ibb.co/xFB1Fz1/unknown-1.png"
+                id="image-preview"
+              />
+              <figcaption>Sube tu michi</figcaption>
+            </figure>
+
+            <input type="file" accept="image/" id="file" name="file" />
+            <button type="button" id="uploadMichiPhoto">
+              Subir foto de michi
+            </button>
+          </form>
+        </section>
+      </div>
+
+      <section class="upload-michi-container">
+        <button id="btn-upload-michi">Subir michi</button>
+      </section>
+
+      <section id="favorites-cats">
+        <header>
+          <h2>Michis favoritos</h2>
+        </header>
+        <div class="cats-container favourite-container">
+          <!-- <article>
+            <img class="favourite-michi" width="250" alt="Un gatito aleatorio" width="300" />
+            <button>Sacar al michi de favoritos</button>
+          </article> -->
+        </div>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
